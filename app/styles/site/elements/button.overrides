@@ -1,0 +1,9 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.button {
+  margin-bottom: 6px;
+  text-transform: lowercase;
+  transition: all 0.35s ease-in-out;
+}

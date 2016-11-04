@@ -1,0 +1,65 @@
+<div class="hero hero__handcrafted">
+  <div class="hero__content">
+    {{#display/scroll-reveal
+      selector="#hero__handcrafted-title"
+      options=(hash
+        origin='left'
+        distance='100%'
+      )
+    }}
+      <h1 id="hero__handcrafted-title" class="hero__header--title">Trailers handcrafted in the US.</h1>
+    {{/display/scroll-reveal}}
+    {{#display/scroll-reveal
+      selector="#hero__handcrafted-subheader"
+      options=(hash
+        delay=600
+        distance='100%'
+        origin='right'
+      )
+    }}
+      <h4 id="hero__handcrafted-subheader" class="hero__header--subheader">Busy trailers are made with quality materials and manufacturing. <strong>Knock on steel.</strong></h4>
+    {{/display/scroll-reveal}}
+    {{#display/scroll-reveal
+      selector=".hero.hero__handcrafted .hero__header--call-to-action"
+      options=(hash
+        delay=1000
+        origin='bottom'
+      )
+    }}
+      <div class="hero__header--call-to-action">
+        <a href="#" class="ui inverted blue massive button">Learn more about our manufacturing process<i class="angle right icon"></i></a>
+        <a href="#" class="ui green massive button">our trailers<i class="angle right icon"></i></a>
+      </div>
+    {{/display/scroll-reveal}}
+  </div>
+</div>
+
+<div class="ui three column container grid">
+  {{#display/scroll-reveal tagName='div' class='ui column'}}
+    <h2 class="ui icon header">
+      <i class="crop icon"></i>
+      <div class="content">
+        Expert Design
+        <div class="sub header">Our in-house engineers help you plan your concession or specialty trailer floorplan to ensure hapiness for years.</div>
+      </div>
+    </h2>
+  {{/display/scroll-reveal}}
+  {{#display/scroll-reveal tagName='div' class='ui column' options=(hash delay=300)}}
+    <h2 class="ui icon header">
+      <i class="diamond icon"></i>
+      <div class="content">
+        Quality
+        <div class="sub header">Your trailer should service your business for years and years. Part of that is ensuring the best quality before your trailer leaves our door.</div>
+      </div>
+    </h2>
+  {{/display/scroll-reveal}}
+  {{#display/scroll-reveal tagName='div' class='ui column' options=(hash delay=600)}}
+    <h2 class="ui icon header">
+      <i class="smile icon"></i>
+      <div class="content">
+        Helpful, Friendly Service
+        <div class="sub header">Customer service is how we give back to our customers and what we consider as one of the most important parts of our business.</div>
+      </div>
+    </h2>
+  {{/display/scroll-reveal}}
+</div>
