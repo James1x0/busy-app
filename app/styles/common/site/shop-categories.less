@@ -1,0 +1,55 @@
+.shop__selector--category {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+
+  .shop__category-selector {
+    position: relative;
+    background-size: cover !important;
+    background-blend-mode: multiply;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: 96vh;
+    transition: all 0.4s ease-in-out;
+
+    .selector__overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      background-color: @brand-offwhite;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+      .selector__overlay {
+        opacity: 0.6;
+      }
+
+      .selector__content {
+        color: @brand-grey !important;
+      }
+    }
+
+    .selector__content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      color: white !important;
+      font-size: 3em;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  > .category-selector__concessions {
+    background: @brand-green url('images/splash_category_concessions.jpg');
+  }
+
+  > .category-selector__other {
+    background: @brand-blue url('images/splash_category_other.jpg');
+  }
+}
